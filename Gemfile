@@ -31,7 +31,9 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-# gem 'devise'
+
+gem 'activeadmin'
+gem 'devise'
 # gem 'coffee-rails'
 # gem 'twitter-bootstrap-rails'
 # gem 'devise-bootstrap-views'

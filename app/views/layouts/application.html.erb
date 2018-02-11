@@ -4,7 +4,12 @@
     <title>Foode</title>
     <%= csrf_meta_tags %>
     <%= render 'meta' %>
+    <%= render 'jquery' %>
+    <%= render 'gsap' %>
+    <%= render 'bootstrap_css' %>
+    <%= render 'font_awesome_css' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= render 'bootstrap' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -13,5 +18,5 @@
     <%= yield %>
     <%= render 'footer' %>
   </body>
-  
+
 </html>
