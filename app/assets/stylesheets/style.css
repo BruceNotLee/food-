@@ -137,9 +137,16 @@ input:hover{
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    color: gray;
+  -webkit-transition: width 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out;
+        opacity: 0.5;
+        border-style: ridge;
+        border-radius: 18px;
+        color: black;
 }
 
 /* Links inside the dropdown */
