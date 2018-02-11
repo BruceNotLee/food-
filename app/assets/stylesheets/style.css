@@ -81,3 +81,8 @@ a {
   border: 1px solid transparent;
   border-radius: 0;
 }
+
+.modal p, h4 {
+  color: black;
+  text-align: left;
+}
