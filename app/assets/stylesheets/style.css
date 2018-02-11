@@ -1,5 +1,5 @@
 body {
-  background-image: url(background_dark.png);
+  background-image: url('../../background_dark.png');
   background-size: cover;
   color: snow;
 }
