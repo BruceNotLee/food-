@@ -24,6 +24,10 @@ h1{
 
 h2 {
  font-size: 3vw;
+text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);
 }
 
 h3 {
@@ -88,8 +92,8 @@ a {
 }
 input[type=text] {
     width: 130px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+    /*-webkit-transition: width 0.4s ease-out-out;;*/
+    /*transition: width 0.4s;*/
     opacity: 0.5;
     border-style: ridge;
 }
@@ -135,9 +139,16 @@ input:hover{
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    color: gray;
+  -webkit-transition: width 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out;
+        opacity: 0.5;
+        border-style: ridge;
+        border-radius: 18px;
+        color: black;
 }
 
 /* Links inside the dropdown */
@@ -146,6 +157,7 @@ input:hover{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    border-radius: 18px;
 }
 
 /* Change color of dropdown links on hover */
@@ -168,4 +180,16 @@ input:hover{
     flex-grow: 1;
     max-width: 100%;
     padding: 26px;
+}
+#horizontal-list {
+  display: flex;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  justify-content:center;
+}
+#horizontal-list li{
+  display: inline;
+  justify-content:center;
+
 }
