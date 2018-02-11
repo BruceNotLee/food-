@@ -45,6 +45,23 @@ a {
  color: snow;
 }
 
+.modal-content {
+  color: black;
+  background-color: #76C341;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fa-envelope-square {
+  color: black;
+}
+
+.btn-success {
+  background-color: #76C341;
+}
+
 .navigation {
  position: fixed;
 }
