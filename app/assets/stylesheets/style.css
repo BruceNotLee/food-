@@ -1,5 +1,5 @@
 body {
- background-image: url(background_dark.png);
+ background-image: url('../../background_dark.png');
  background-size: cover;
  color: snow;
  line-height: 30px;
@@ -44,7 +44,6 @@ a {
 .navigation {
  font-size: 1vw;
  position: fixed;
-
 }
 
 .header {
@@ -64,6 +63,7 @@ a {
  width: 100%;
  padding-top: 1em;
  text-align: center;
+ background-color: rgba(0, 0, 0, 0.8);
 
 }
 
@@ -178,4 +178,3 @@ input:hover{
     max-width: 100%;
     padding: 26px;
 }
-/* Container background/styles */

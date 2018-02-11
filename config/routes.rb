@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :charges, only: [:new, :create]
   resources :menus
   devise_for :users
   # devise_for :users
