@@ -44,7 +44,6 @@ a {
 .navigation {
  font-size: 1vw;
  position: fixed;
-
 }
 
 .header {
@@ -64,6 +63,7 @@ a {
  width: 100%;
  padding-top: 1em;
  text-align: center;
+ background-color: rgba(0, 0, 0, 0.8);
 
 }
 
