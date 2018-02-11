@@ -34,7 +34,4 @@ end
 
 gem 'activeadmin'
 gem 'devise'
-# gem 'coffee-rails'
-# gem 'twitter-bootstrap-rails'
-# gem 'devise-bootstrap-views'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
