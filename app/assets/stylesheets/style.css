@@ -1,5 +1,5 @@
 body {
- background-image: url(background_dark.png);
+ background-image: url('../../background_dark.png');
  background-size: cover;
  color: snow;
  line-height: 30px;
@@ -171,4 +171,3 @@ input:hover{
     max-width: 100%;
     padding: 26px;
 }
-/* Container background/styles */
