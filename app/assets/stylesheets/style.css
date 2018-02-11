@@ -1,8 +1,6 @@
 body {
   background-image: url(background_dark.png);
   background-size: cover;
-  font-family: 'Roboto', sans-serif;
-
   color: snow;
 }
 
@@ -13,7 +11,7 @@ html, body {
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
-  font-family: inherit;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   line-height: 1.2;
   color: inherit;
@@ -36,12 +34,22 @@ p {
   font-size: 1vw;
 }
 
+a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1vw;
+  color: snow;
+}
+
+.navigation {
+  font-size: 1vw;
+}
+
 .header {
   position: fixed;
   top: 0;
   width: 100%;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
+
 }
 .footer {
   position: fixed;
@@ -49,16 +57,18 @@ p {
   width: 100%;
   padding-top: 1em;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
+
 }
 
 .container {
   margin: 2em;
   grid-gap: 1em;
+  padding: 0.1em;
 }
 
 .welcome {
   padding: 1em;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .row  {
 
