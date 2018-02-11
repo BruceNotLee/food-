@@ -59,7 +59,6 @@ a {
 }
 
 .navigation {
- font-size: 1vw;
  position: fixed;
 }
 
@@ -85,9 +84,8 @@ a {
 }
 
 .container {
- margin: 2em;
- grid-gap: 1em;
- padding: 0.1em;
+ margin: 0.1em;
+ padding: 0em;
 }
 
 .welcome {
