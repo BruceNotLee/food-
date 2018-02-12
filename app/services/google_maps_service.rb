@@ -1,5 +1,5 @@
 class GoogleMapsService
-  @@google_key = ENV['google_key']
+  @@google_key = ENV['GOOGLE_KEY']
   class << self
     def root_path
       'https://maps.googleapis.com/maps/api/'
