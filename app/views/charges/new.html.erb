@@ -1,5 +1,6 @@
 <!-- app/views/charges/new.html.erb -->
 
+<div class="container welcome">
 <%= form_tag charges_path do %>
   <article>
     <% if flash[:error].present? %>
@@ -8,7 +9,8 @@
       </div>
     <% end %>
     <label class="amount">
-      <span>Amount: $5</span>
+      <h3>Subscribe to Foodé for only 5$/month!</h3>
+      <br>
     </label>
   </article>
 
@@ -18,3 +20,4 @@
           data-amount="500"
           data-locale="auto"></script>
 <% end %>
+</div>

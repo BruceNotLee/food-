@@ -134,13 +134,7 @@ input[type=text] {
     /*-webkit-transition: width 0.4s ease-out-out;;*/
     /*transition: width 0.4s;*/
     opacity: 0.5;
-    border-radius: 18px;
     border-style: ridge;
-}
-.fas{ position: relative;
-  /*position: absolute;*/
-  top: 24px;
-  left: 70px;
 }
 
 /* When the input field gets focus, change its width to 100% */
