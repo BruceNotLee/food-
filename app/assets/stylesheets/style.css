@@ -2,11 +2,10 @@ body {
  background-image: url('../../background_dark.png');
  background-size: cover;
  color: snow;
- line-height: 30px;
+ line-height: 1.5em;
 }
 
 html, body {
- height: 100%;
  margin: 0;
 }
 
@@ -71,7 +70,6 @@ a {
  top: 0;
  width: 100%;
  text-align: center;
- margin-left: 9px;
  padding: 1em;
  background-color: rgba(0, 0, 0, 0.8);
 
@@ -88,14 +86,16 @@ a {
 }
 
 .container {
- margin: 0.1em;
+ margin: 0em;
  padding: 0em;
+ max-width: 100vw;
 }
 
 .welcome {
  padding: 1em;
  background-color: rgba(0, 0, 0, 0.3);
 }
+
 .row  {
 
 }
