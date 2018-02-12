@@ -22,7 +22,7 @@ h1{
 }
 #foode{
   font-size: 3vw;
-  padding: 5px;
+  padding: 10px;
   /*text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                0px 8px 13px rgba(0,0,0,0.1),
                0px 18px 23px rgba(0,0,0,0.1);*/
@@ -154,6 +154,11 @@ input[type=text]:focus {
 
 input:hover{
   opacity:0.4;
+   box-shadow: 0 0 0 5px rgb(82, 71, 82)
+}
+.dropbtn:hover{
+  opacity:0.4;
+   box-shadow: 0 0 0 5px rgb(82, 71, 82)
 }
 
 /* Dropdown Button */
@@ -224,7 +229,7 @@ input:hover{
     -webkit-box-flex: 1;
     flex-grow: 0;
     max-width: 100%;
-    padding: 1vw;
+    padding: 3vw;
 }
 #horizontal-list {
   display: flex;
@@ -237,4 +242,32 @@ input:hover{
   display: inline;
   justify-content:center;
 
+}
+
+.search-box {
+  transition: width $tl, border-radius $tl, background $tl, box-shadow $tl;
+  width: 40px;height: 40px;
+  border-radius: 20px;border: none;
+  cursor: pointer;
+  background: rgb(235, 235, 235);
+  & + label .search-icon {    color: black    }
+  &:hover {
+    color: white;
+    background: rgb(200, 200, 200);
+    box-shadow: 0 0 0 5px rgb(61, 71, 82);
+    & + label .search-icon {    color: white    }
+  }
+  &:focus {
+    transition: width $tl cubic-bezier(0,1.22,.66,1.39), border-radius $tl, background $tl;
+    border: none;outline: none;
+    box-shadow: none;
+    padding-left: 15px;
+    cursor: text;
+    width: 300px;
+    border-radius: auto;
+    background: rgb(235, 235, 235);
+    color: black;
+    & + label .search-icon {    color: black;    }
+  }
+  &:not(:focus) {    text-indent:-5000px;    } // for more-graceful falling back (:not browsers likely support indent)
 }
