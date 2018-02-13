@@ -3,6 +3,7 @@ body {
  background-size: cover;
  color: snow;
  line-height: 1.5em;
+ padding-top: 100px;
 }
 
 html, body {
@@ -20,6 +21,7 @@ html, body {
 h1{
  font-size: 5vw;
 }
+
 #foode{
   font-size: 3vw;
   padding: 10px;
@@ -84,7 +86,7 @@ a {
 }
 
 .navigation {
- position: fixed;
+ position: static;
 }
 
 .header {

@@ -4,16 +4,18 @@
       <div class="container">
         <div class="row">
           <div class="col-1">
-            <%= image_tag "logo-f.png" %>
+            <%= link_to root_path do %>
+              <%= image_tag "logo-f.png" %>
+            <% end %>
           </div>
           <div class="col-8">
             <h2 id="foode">FOODÉ.ME</h2>
           </div>
           <div class="col-3">
-            <ul class="hmenu">
+            <!-- <ul class="hmenu"> -->
               <%= render 'devise/menu/registration_items' %>
               <%= render 'devise/menu/login_items' %>
-            </ul>
+            <!-- </ul> -->
           </div>
         </div>
       </div>
