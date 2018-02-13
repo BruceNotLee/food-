@@ -13,8 +13,7 @@ class WelcomeController < ApplicationController
   end
 
   def address_search
-    @response = GoogleMapsService.new
-    @response.nearby_places(params[:search])
+    @response = GoogleMapsService.nearby_places(params[:search])
     render 'maps/index', response: @response
   end
 
