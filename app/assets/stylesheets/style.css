@@ -129,20 +129,24 @@ a {
  border: 1px solid transparent;
  border-radius: 0;
 }
+
+}
 input[type=text] {
-    width: 130px;
-    /*-webkit-transition: width 0.4s ease-out-out;;*/
-    /*transition: width 0.4s;*/
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
     opacity: 0.5;
     border-style: ridge;
+    border-radius: 18px;
+
 }
 
 /* When the input field gets focus, change its width to 100% */
 input[type=text]:focus {
-    /*width: 100%;*/
+    width: 100%;
     opacity: 0.5;
-    border-style : ridge;
-    border-radius: 18px;
+    /*border-style : ridge;*/
+    /*border-radius: 18px;*/
     color: black;
   }
 
