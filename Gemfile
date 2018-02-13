@@ -35,4 +35,5 @@ group :development do
 end
 
 gem 'devise'
+gem 'unsplash', '~> 1.5'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
