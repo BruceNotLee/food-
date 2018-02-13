@@ -1,28 +1,29 @@
 <div class="container welcome">
-  <h1>
-    Welcome
-  </h1>
-  <div class="container">
-    <div class="row">
-      <h2>
-        <i class="fas fa-search"></i>
-        Search for your favorite food!
-      </h2>
+  <% if @local_resturants.nil? %>
+    <h1>
+      Welcome
+    </h1>
+    <div class="container">
+      <div class="row">
+        <h2>
+          <i class="fas fa-search"></i>
+          Search for your favorite food!
+        </h2>
+      </div>
+      <div class="row">
+        <h2>
+          <i class="fas fa-map-marker"></i>
+          See all the local menus!
+        </h2>
+      </div>
+      <div class="row">
+        <h2>
+          <i class="fas fa-filter"></i>
+          Filter by your favorite types or diet requirments!
+        </h2>
+      </div>
     </div>
-    <div class="row">
-      <h2>
-        <i class="fas fa-map-marker"></i>
-        See all the local menus!
-      </h2>
-    </div>
-    <div class="row">
-      <h2>
-        <i class="fas fa-filter"></i>
-        Filter by your favorite types or diet requirments!
-      </h2>
-    </div>
-  </div>
-  <hr class="my-4">
+    <hr class="my-4">
     <div class="signup">
       <p>Order in a takeaway, it's just a few clicks away</p>
       <p class="lead">
@@ -31,4 +32,6 @@
       </p>
     </div>
   </div>
-</div>
+<% else %>
+  <%= render 'show' %>
+<% end %>
