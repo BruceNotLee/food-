@@ -1,5 +1,6 @@
 class GoogleMapsService
   @@google_key = ENV['GOOGLE_KEY']
+  @@place_id
   class << self
     def root_path
       'https://maps.googleapis.com/maps/api/'
@@ -26,6 +27,14 @@ class GoogleMapsService
       location = response_body['results'][0]['geometry']['location']
 
       "#{location['lat']},#{location['lng']}"
+    end
+
+    def place_details(placeid)
+      root_path = "https://maps.googleapis.com/maps/api/place/details/json?placeid=#{placeid}&key=#{@@google_key}"
+
+      response = RestClient.get(root_path)
+
+      return JSON.parse(response.body)
     end
   end
 end
