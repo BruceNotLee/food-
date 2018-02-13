@@ -2,7 +2,7 @@
 
   <% @local_resturants.each do |restaurant| %>
     <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="" alt="Card image cap">
+      <%= render 'meals' %>
       <div class="card-body">
         <h5 class="card-title"> <%= restaurant[:name] %></h5>
         <div class="card-text">
