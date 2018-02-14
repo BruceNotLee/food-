@@ -1,6 +1,7 @@
 <section id="photos">
-  <% @meals =  Unsplash::Photo.search("food").sample["urls"]["thumb"]  %>
+
   <% @local_resturants[0..9].each do |restaurant| %>
+  <% @meals =  Unsplash::Photo.search("food").sample["urls"]["thumb"]  %>
     <div class="card" style="width: 18rem;">
       <img class="card-img-top" src="<%= @meals %>'" alt="Card image cap">
       <div class="card-body">
