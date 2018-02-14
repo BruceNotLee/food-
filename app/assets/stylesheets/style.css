@@ -278,3 +278,14 @@ a:hover{
 .logo img {
   width: 7vw;
 }
+.dropbtn {
+    color: gray;
+    font-size: 1.2vw;
+    width: 10vw;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    opacity: 0.5;
+    border-style: ridge;
+    border-radius: 18px;
+    color: black;
+}
