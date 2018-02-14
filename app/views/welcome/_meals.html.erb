@@ -1,4 +1,2 @@
 <% @meals = search_results = %>
-<%= Unsplash::Photo.search("food").sample["urls"]["small"] %>
-
-<!-- <%= image_tag(@meals, :alt => "rss feed") %> -->
+<% Unsplash::Photo.search("food").sample["urls"]["small"] %>

@@ -2,18 +2,17 @@
 
   <% @local_resturants.each do |restaurant| %>
     <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="<%= render partial: 'meals' %>'" alt="Card image cap">
+      <img class="card-img-top" src="<%= render 'meals' %>'" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title"> <%= restaurant[:name] %></h5>
-        <div class="card-text">
-          <p>Opening hours: <%= restaurant[:opening_hours] %></p>
-          <p>Vicinity: <%= restaurant[:vicinity] %></p>
-        </div>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <!-- <div class="card-text"> -->
+          <!-- <p>Opening hours: <%# restaurant[:opening_hours] %></p> -->
+          <!-- <p>Address: <%# restaurant.details[:vicinity] %></p> -->
+        <!-- </div> -->
+        <a href="#" class="btn btn-primary"> Details</a>
       </div>
     </div>
   <% end %>
-
 </section>
 
 

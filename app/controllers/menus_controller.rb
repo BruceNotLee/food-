@@ -5,6 +5,7 @@ class MenusController < ApplicationController
   # GET /menus.json
   def index
     @menus = Menu.all
+    @meals =  Unsplash::Photo.search("food").sample["urls"]["small"]
   end
 
   # GET /menus/1
