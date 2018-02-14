@@ -280,3 +280,7 @@ a:{
 a:hover{
   color: white;
 }
+
+.logo img {
+  width: 7vw;
+}
