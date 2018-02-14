@@ -300,3 +300,12 @@ a:hover{
 .card element.style {
     width: 14rem;
 }
+
+.center {text-align: center;}
+
+footer .row {
+  justify-content: space-evenly;
+  padding: 0vw;
+  padding-bottom: 0.5vw;
+  margin: -2vw;
+}
