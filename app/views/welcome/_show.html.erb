@@ -1,6 +1,6 @@
 <section id="photos">
 
-  <% @local_resturants.each do |restaurant| %>
+  <% @local_resturants[0..9].each do |restaurant| %>
     <div class="card" style="width: 18rem;">
       <img class="card-img-top" src="<%= render 'meals' %>'" alt="Card image cap">
       <div class="card-body">
