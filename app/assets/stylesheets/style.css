@@ -115,9 +115,6 @@ a {
   border-radius: 0;
 }
 
-input {
-
-}
 input[type=search] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
@@ -272,11 +269,5 @@ input::-webkit-input-placeholder {
   &:not(:focus) {    text-indent:-5000px;    } // for more-graceful falling back (:not browsers likely support indent)
 }
 a:visited{
-  color: yellowgreen;
-}
-a:{
   color: green;
-}
-a:hover{
-  color: white;
 }
