@@ -25,7 +25,7 @@ class GoogleMapsService
       response_body = JSON.parse(response.body)
 
       if response_body['results'].empty?
-        location = { 'lat': '25.8028083', 'lng': '-80.2743944'}
+        location = { 'lat' => '25.8028083', 'lng' => '-80.2743944'}
       else
         location = response_body['results'][0]['geometry']['location']
       end
