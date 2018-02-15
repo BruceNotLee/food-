@@ -1,5 +1,5 @@
 body {
-  background-image: url('../../background_dark.png');
+  background-image: image-url('../../background_dark.png');
   background-size: cover;
   color: snow;
   line-height: 1.5em;
@@ -245,7 +245,6 @@ input:hover{
 }
 
 .search-box {
-  transition: width $tl, border-radius $tl, background $tl, box-shadow $tl;
   width: 40px;height: 40px;
   border-radius: 20px;border: none;
   cursor: pointer;
@@ -258,7 +257,7 @@ input:hover{
     & + label .search-icon { color: white; }
     }
   &:focus {
-    transition: width $tl cubic-bezier(0,1.22,.66,1.39), border-radius $tl, background $tl;
+    transition: cubic-bezier(0,1.22,.66,1.39);
     border: none;
     outline: none;
     box-shadow: none;
