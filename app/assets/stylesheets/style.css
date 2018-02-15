@@ -255,16 +255,17 @@ input:hover{
   border-radius: 20px;border: none;
   cursor: pointer;
   background: rgb(235, 235, 235);
-  & + label .search-icon {    color: black    }
+  & + label .search-icon { color: black; }
   &:hover {
     color: white;
     background: rgb(200, 200, 200);
     box-shadow: 0 0 0 5px rgb(61, 71, 82);
-    & + label .search-icon {    color: white    }
-  }
+    & + label .search-icon { color: white; }
+    }
   &:focus {
     transition: width $tl cubic-bezier(0,1.22,.66,1.39), border-radius $tl, background $tl;
-    border: none;outline: none;
+    border: none;
+    outline: none;
     box-shadow: none;
     padding-left: 15px;
     cursor: text;
@@ -272,9 +273,9 @@ input:hover{
     border-radius: auto;
     background: rgb(235, 235, 235);
     color: black;
-    & + label .search-icon {    color: black;    }
-  }
-  &:not(:focus) {    text-indent:-5000px;    } // for more-graceful falling back (:not browsers likely support indent)
+    & + label .search-icon { color: black; }
+    }
+  &:not(:focus) { text-indent:-5000px; } // for more-graceful falling back (:not browsers likely support indent)
 }
 a:visited{
   color: green;
