@@ -20,6 +20,7 @@ html, body {
 
 h1{
   font-size: 5vw;
+  color: green;
 }
 
 #foode{
@@ -305,4 +306,8 @@ footer .row {
   padding: 0vw;
   padding-bottom: 0.5vw;
   margin: -2vw;
+}
+.new_user{
+  justify-content: center;
+  display: grid;
 }
