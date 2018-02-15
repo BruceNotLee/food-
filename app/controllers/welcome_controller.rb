@@ -4,6 +4,7 @@ class WelcomeController < ApplicationController
     unless params[:search].nil?
       p params[:search]
       @places = GoogleMapsService.nearby_places params[:search]
+      @meals =  Unsplash::Photo.search("food")
       @local_resturants = @places.map do |r|
         pd = GoogleMapsService.place_details(r['place_id'])['result']
         {
