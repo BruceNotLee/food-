@@ -24,7 +24,11 @@ class GoogleMapsService
       response = RestClient.get(url_path + "components=postal_code:#{zip}")
       response_body = JSON.parse(response.body)
 
-      location = response_body['results'][0]['geometry']['location']
+      if response_body['results'].empty?
+        location = { 'lat' => '25.8028083', 'lng' => '-80.2743944'}
+      else
+        location = response_body['results'][0]['geometry']['location']
+      end
 
       "#{location['lat']},#{location['lng']}"
     end

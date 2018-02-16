@@ -1,19 +1,14 @@
 <section id="photos">
 
-  <% @local_resturants.each do |restaurant| %>
+  <% @local_resturants[0..9].each do |restaurant| %>
     <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="" alt="Card image cap">
+      <img class="card-img-top" src="<%= @meals.sample["urls"]["small"] %>'" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title"> <%= restaurant[:name] %></h5>
-        <div class="card-text">
-          <p>Opening hours: <%= restaurant[:opening_hours] %></p>
-          <p>Vicinity: <%= restaurant[:vicinity] %></p>
-        </div>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" class="btn btn-primary"> Details</a>
       </div>
     </div>
   <% end %>
-
 </section>
 
 

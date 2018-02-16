@@ -1,5 +1,5 @@
 body {
-  background-image: url('../../background_dark.png');
+  background-image: image-url('../../background_dark.png');
   background-size: cover;
   color: snow;
   line-height: 1.5em;
@@ -20,6 +20,7 @@ html, body {
 
 h1{
   font-size: 5vw;
+  color: green;
 }
 
 #foode{
@@ -79,9 +80,8 @@ a {
   text-align: center;
   padding: 25px;
   background-color: rgba(0, 0, 0, 0.8);
-
-
 }
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -89,7 +89,6 @@ a {
   /*padding-top: 1em;*/
   text-align: center;
   background-color: rgba(0, 0, 0, 0.8);
-
 }
 
 .container {
@@ -122,14 +121,14 @@ input[type=search] {
   font-size: 100%;
   opacity:0.4;
   border-style: ridge;
-
-
+  outline: none;
 }
+
+
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button {
   display: none;
 }
-
 
 input[type=search] {
   background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
@@ -152,9 +151,11 @@ input[type=search]:focus {
   -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
   box-shadow: 0 0 5px rgba(109,207,246,.5);
   font-size: 16px;
+  box-shadow: 0 0 0 5px rgb(82, 71, 82)
 }
 
 input:hover{
+
   box-shadow: 0 0 0 5px rgb(82, 71, 82)
 }
 
@@ -164,6 +165,10 @@ input::-webkit-input-placeholder {
 .dropbtn:hover{
   opacity:0.4;
   box-shadow: 0 0 0 5px rgb(82, 71, 82)
+}
+
+input:hover{
+ box-shadow: 0 0 0 5px rgb(82, 71, 82)
 }
 
 /* Dropdown Button */
@@ -232,6 +237,7 @@ input::-webkit-input-placeholder {
   max-width: 100%;
   padding: 3vw;
 }
+
 #horizontal-list {
   display: flex;
   padding-left: 0;
@@ -242,25 +248,24 @@ input::-webkit-input-placeholder {
 #horizontal-list li{
   display: inline;
   justify-content:center;
-
 }
 
 .search-box {
-  transition: width $tl, border-radius $tl, background $tl, box-shadow $tl;
   width: 40px;height: 40px;
   border-radius: 20px;border: none;
   cursor: pointer;
   background: rgb(235, 235, 235);
-  & + label .search-icon {    color: black    }
+  & + label .search-icon { color: black; }
   &:hover {
     color: white;
     background: rgb(200, 200, 200);
     box-shadow: 0 0 0 5px rgb(61, 71, 82);
-    & + label .search-icon {    color: white    }
-  }
+    & + label .search-icon { color: white; }
+    }
   &:focus {
-    transition: width $tl cubic-bezier(0,1.22,.66,1.39), border-radius $tl, background $tl;
-    border: none;outline: none;
+    transition: cubic-bezier(0,1.22,.66,1.39);
+    border: none;
+    outline: none;
     box-shadow: none;
     padding-left: 15px;
     cursor: text;
@@ -268,10 +273,46 @@ input::-webkit-input-placeholder {
     border-radius: auto;
     background: rgb(235, 235, 235);
     color: black;
-    & + label .search-icon {    color: black;    }
-  }
-  &:not(:focus) {    text-indent:-5000px;    } // for more-graceful falling back (:not browsers likely support indent)
+    & + label .search-icon { color: black; }
+    }
+  &:not(:focus) { text-indent:-5000px; } // for more-graceful falling back (:not browsers likely support indent)
 }
+
 a:visited{
   color: green;
+}
+
+a:hover{
+  color: white;
+}
+
+.logo img {
+  width: 7vw;
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0.25rem;
+    backface-visibility: inherit;
+    color: black;
+    background-color: #82c63d;
+}
+
+.card element.style {
+    width: 14rem;
+}
+
+.center {text-align: center;}
+
+footer .row {
+  justify-content: space-evenly;
+  padding: 0vw;
+  padding-bottom: 0.5vw;
+  margin: -2vw;
+}
+.new_user{
+  justify-content: center;
+  display: grid;
 }
