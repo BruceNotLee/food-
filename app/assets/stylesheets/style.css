@@ -154,6 +154,11 @@ input[type=search]:focus {
   font-size: 16px;
 }
 
+input:hover{
+
+  box-shadow: 0 0 0 5px rgb(82, 71, 82)
+}
+
 input::-webkit-input-placeholder {
   color: black;
 }
